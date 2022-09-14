@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cartelera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cinépolis.png" translatesAutoresizingMaskIntoConstraints="NO" id="MHt-U6-kya">
+                                <rect key="frame" x="47" y="44" width="320" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MHt-U6-kya" secondAttribute="height" multiplier="320:91" id="Cd8-kl-49x"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barra.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iph-Pb-bfC">
+                                <rect key="frame" x="0.0" y="135" width="414" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iph-Pb-bfC" secondAttribute="height" multiplier="320:51" id="C4B-cV-CHI"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muA-GR-sM9">
+                                <rect key="frame" x="0.0" y="201" width="414" height="661"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tD9-IZ-1cf">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="330.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUt-h9-RoU">
+                                                <rect key="frame" x="5" y="5" width="197" height="197"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="aUt-h9-RoU" secondAttribute="height" multiplier="1:1" id="RqH-hG-5kr"/>
+                                                </constraints>
+                                                <state key="normal" image="pelicula1_cartel1.jpg"/>
+                                                <connections>
+                                                    <segue destination="BtL-dG-p5H" kind="presentation" id="OSd-pm-XcO"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRAGON BALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwP-QM-egK">
+                                                <rect key="frame" x="5" y="203" width="197" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="lq0-DV-a75"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="IwP-QM-egK" secondAttribute="trailing" constant="5" id="5mk-8m-LKW"/>
+                                            <constraint firstItem="aUt-h9-RoU" firstAttribute="top" secondItem="tD9-IZ-1cf" secondAttribute="top" constant="5" id="EW9-kc-wS5"/>
+                                            <constraint firstItem="IwP-QM-egK" firstAttribute="top" secondItem="aUt-h9-RoU" secondAttribute="bottom" constant="1" id="R4g-IP-JPR"/>
+                                            <constraint firstItem="IwP-QM-egK" firstAttribute="top" secondItem="aUt-h9-RoU" secondAttribute="bottom" constant="1" id="RxU-pJ-uJL"/>
+                                            <constraint firstItem="IwP-QM-egK" firstAttribute="leading" secondItem="tD9-IZ-1cf" secondAttribute="leading" constant="5" id="UiY-hE-LVh"/>
+                                            <constraint firstItem="aUt-h9-RoU" firstAttribute="leading" secondItem="tD9-IZ-1cf" secondAttribute="leading" constant="5" id="r0w-99-Mvg"/>
+                                            <constraint firstAttribute="trailing" secondItem="aUt-h9-RoU" secondAttribute="trailing" constant="5" id="uOY-QG-N8a"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zt-CQ-sze">
+                                        <rect key="frame" x="207" y="330.5" width="207" height="330.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbx-s4-eAp">
+                                                <rect key="frame" x="5" y="5" width="197" height="197"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="nbx-s4-eAp" secondAttribute="height" multiplier="1:1" id="OGa-FU-Rc2"/>
+                                                </constraints>
+                                                <state key="normal" image="pelicula4_cartel1.jpg"/>
+                                                <connections>
+                                                    <segue destination="gzw-Ai-fJQ" kind="presentation" id="9HX-sH-MHS"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VERTIGO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kre-xn-orh">
+                                                <rect key="frame" x="5" y="203" width="197" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="UYN-WZ-iHt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="kre-xn-orh" firstAttribute="top" secondItem="nbx-s4-eAp" secondAttribute="bottom" constant="1" id="BeU-ed-64d"/>
+                                            <constraint firstItem="kre-xn-orh" firstAttribute="leading" secondItem="7zt-CQ-sze" secondAttribute="leading" constant="5" id="DlI-ju-0AK"/>
+                                            <constraint firstItem="nbx-s4-eAp" firstAttribute="top" secondItem="7zt-CQ-sze" secondAttribute="top" constant="5" id="Qq7-qJ-bor"/>
+                                            <constraint firstAttribute="trailing" secondItem="nbx-s4-eAp" secondAttribute="trailing" constant="5" id="SKX-Dr-TaT"/>
+                                            <constraint firstItem="nbx-s4-eAp" firstAttribute="leading" secondItem="7zt-CQ-sze" secondAttribute="leading" constant="5" id="eKh-tJ-A9R"/>
+                                            <constraint firstItem="kre-xn-orh" firstAttribute="top" secondItem="nbx-s4-eAp" secondAttribute="bottom" constant="1" id="i32-gs-ULl"/>
+                                            <constraint firstAttribute="trailing" secondItem="kre-xn-orh" secondAttribute="trailing" constant="5" id="inH-sP-pLo"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hfi-FC-T9v">
+                                        <rect key="frame" x="0.0" y="330.5" width="207" height="330.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgj-Id-Sg3">
+                                                <rect key="frame" x="5" y="5" width="197" height="197"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="zgj-Id-Sg3" secondAttribute="height" multiplier="1:1" id="y3G-gl-o3G"/>
+                                                </constraints>
+                                                <state key="normal" image="pelicula3_cartel1.jpg"/>
+                                                <connections>
+                                                    <segue destination="wfz-hh-KMY" kind="presentation" id="6MD-6b-nPc"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TREN BALA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8Y-ux-gc5">
+                                                <rect key="frame" x="5" y="203" width="197" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="Mar-DM-eoL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="zgj-Id-Sg3" secondAttribute="trailing" constant="5" id="1nv-ab-LEf"/>
+                                            <constraint firstItem="zgj-Id-Sg3" firstAttribute="top" secondItem="hfi-FC-T9v" secondAttribute="top" constant="5" id="A5q-4l-KjK"/>
+                                            <constraint firstItem="zgj-Id-Sg3" firstAttribute="leading" secondItem="hfi-FC-T9v" secondAttribute="leading" constant="5" id="G6t-GF-Nxp"/>
+                                            <constraint firstItem="U8Y-ux-gc5" firstAttribute="top" secondItem="zgj-Id-Sg3" secondAttribute="bottom" constant="1" id="bq7-gd-u8l"/>
+                                            <constraint firstAttribute="trailing" secondItem="U8Y-ux-gc5" secondAttribute="trailing" constant="5" id="oXe-u8-1Z5"/>
+                                            <constraint firstItem="U8Y-ux-gc5" firstAttribute="leading" secondItem="hfi-FC-T9v" secondAttribute="leading" constant="5" id="wHh-cH-BfX"/>
+                                            <constraint firstItem="U8Y-ux-gc5" firstAttribute="top" secondItem="zgj-Id-Sg3" secondAttribute="bottom" constant="1" id="zF4-ZQ-LqV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fU-iz-Jjb">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="330.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHD-rq-hHC">
+                                                <rect key="frame" x="5" y="5" width="197" height="197"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="tHD-rq-hHC" secondAttribute="height" multiplier="1:1" id="jty-wn-jhH"/>
+                                                </constraints>
+                                                <state key="normal" image="pelicula2_cartel1.jpg"/>
+                                                <connections>
+                                                    <segue destination="zpd-na-x5i" kind="presentation" id="in1-x7-SSf"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ELVIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4d-ag-UpN">
+                                                <rect key="frame" x="5" y="203" width="197" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="OJz-hb-EX9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="f4d-ag-UpN" firstAttribute="top" secondItem="tHD-rq-hHC" secondAttribute="bottom" constant="1" id="3iO-lS-doN"/>
+                                            <constraint firstItem="f4d-ag-UpN" firstAttribute="top" secondItem="tHD-rq-hHC" secondAttribute="bottom" constant="1" id="8Vm-qg-XdI"/>
+                                            <constraint firstItem="tHD-rq-hHC" firstAttribute="top" secondItem="2fU-iz-Jjb" secondAttribute="top" constant="5" id="UbZ-Wj-wNV"/>
+                                            <constraint firstItem="tHD-rq-hHC" firstAttribute="leading" secondItem="2fU-iz-Jjb" secondAttribute="leading" constant="5" id="VE0-nr-XMv"/>
+                                            <constraint firstItem="f4d-ag-UpN" firstAttribute="leading" secondItem="2fU-iz-Jjb" secondAttribute="leading" constant="5" id="VyN-CW-QIr"/>
+                                            <constraint firstAttribute="trailing" secondItem="tHD-rq-hHC" secondAttribute="trailing" constant="5" id="e85-GB-9Ma"/>
+                                            <constraint firstAttribute="trailing" secondItem="f4d-ag-UpN" secondAttribute="trailing" constant="5" id="haN-Wa-aqN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tD9-IZ-1cf" firstAttribute="width" secondItem="muA-GR-sM9" secondAttribute="width" multiplier="0.5" id="1QK-vA-2bf"/>
+                                    <constraint firstItem="aUt-h9-RoU" firstAttribute="top" secondItem="muA-GR-sM9" secondAttribute="top" constant="5" id="2fT-Xy-cqJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="hfi-FC-T9v" secondAttribute="bottom" id="66K-z4-q1v"/>
+                                    <constraint firstItem="IwP-QM-egK" firstAttribute="top" secondItem="aUt-h9-RoU" secondAttribute="bottom" constant="1" id="6o7-GR-Jne"/>
+                                    <constraint firstItem="2fU-iz-Jjb" firstAttribute="top" secondItem="muA-GR-sM9" secondAttribute="top" id="9S0-DP-D1D"/>
+                                    <constraint firstItem="7zt-CQ-sze" firstAttribute="width" secondItem="muA-GR-sM9" secondAttribute="width" multiplier="0.5" id="ECF-7C-tgI"/>
+                                    <constraint firstItem="hfi-FC-T9v" firstAttribute="height" secondItem="muA-GR-sM9" secondAttribute="height" multiplier="0.5" id="GoF-Vm-bad"/>
+                                    <constraint firstAttribute="trailing" secondItem="7zt-CQ-sze" secondAttribute="trailing" id="a8T-Bn-sXV"/>
+                                    <constraint firstItem="2fU-iz-Jjb" firstAttribute="height" secondItem="muA-GR-sM9" secondAttribute="height" multiplier="0.5" id="b92-V7-f2q"/>
+                                    <constraint firstAttribute="trailing" secondItem="aUt-h9-RoU" secondAttribute="trailing" constant="212" id="cEa-FM-Y7y"/>
+                                    <constraint firstItem="tD9-IZ-1cf" firstAttribute="leading" secondItem="muA-GR-sM9" secondAttribute="leading" id="drw-of-4Fu"/>
+                                    <constraint firstItem="aUt-h9-RoU" firstAttribute="leading" secondItem="muA-GR-sM9" secondAttribute="leading" constant="5" id="e1a-lc-dch"/>
+                                    <constraint firstAttribute="trailing" secondItem="2fU-iz-Jjb" secondAttribute="trailing" id="jzu-rk-lYX"/>
+                                    <constraint firstItem="tD9-IZ-1cf" firstAttribute="height" secondItem="muA-GR-sM9" secondAttribute="height" multiplier="0.5" id="kMx-ya-po0"/>
+                                    <constraint firstItem="2fU-iz-Jjb" firstAttribute="width" secondItem="muA-GR-sM9" secondAttribute="width" multiplier="0.5" id="kzg-6u-Bky"/>
+                                    <constraint firstItem="tD9-IZ-1cf" firstAttribute="top" secondItem="muA-GR-sM9" secondAttribute="top" id="rEf-Oa-6om"/>
+                                    <constraint firstAttribute="bottom" secondItem="7zt-CQ-sze" secondAttribute="bottom" id="tWS-ez-xGC"/>
+                                    <constraint firstItem="7zt-CQ-sze" firstAttribute="height" secondItem="muA-GR-sM9" secondAttribute="height" multiplier="0.5" id="wDA-k0-JtJ"/>
+                                    <constraint firstItem="hfi-FC-T9v" firstAttribute="width" secondItem="muA-GR-sM9" secondAttribute="width" multiplier="0.5" id="xA1-0G-CPv"/>
+                                    <constraint firstItem="IwP-QM-egK" firstAttribute="top" secondItem="aUt-h9-RoU" secondAttribute="bottom" constant="1" id="ydx-g2-tYv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.25445714590000001" green="0.4993768334" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MHt-U6-kya" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0Ju-xE-3Ih"/>
+                            <constraint firstItem="muA-GR-sM9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1sD-5O-COJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="muA-GR-sM9" secondAttribute="bottom" id="7So-U8-K3g"/>
+                            <constraint firstItem="MHt-U6-kya" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.772947" id="Cpp-hX-H60"/>
+                            <constraint firstItem="muA-GR-sM9" firstAttribute="top" secondItem="iph-Pb-bfC" secondAttribute="bottom" id="GfJ-r9-r1J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="muA-GR-sM9" secondAttribute="trailing" id="HFb-MZ-Ypb"/>
+                            <constraint firstItem="tD9-IZ-1cf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="201" id="WR2-8i-HCQ"/>
+                            <constraint firstItem="iph-Pb-bfC" firstAttribute="top" secondItem="MHt-U6-kya" secondAttribute="bottom" id="WtE-vI-1Zk"/>
+                            <constraint firstItem="MHt-U6-kya" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="auj-33-a7K"/>
+                            <constraint firstItem="tD9-IZ-1cf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="icu-7Z-45o"/>
+                            <constraint firstItem="tD9-IZ-1cf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iom-nr-yKp"/>
+                            <constraint firstItem="iph-Pb-bfC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="mOZ-IQ-Dmr"/>
+                            <constraint firstItem="tD9-IZ-1cf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" constant="-117.5" id="rF1-mn-Kvo"/>
+                            <constraint firstItem="iph-Pb-bfC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="soH-8y-r6w"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="119"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Pj8-BQ-0vj">
+            <objects>
+                <viewController id="BtL-dG-p5H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D2z-sv-VxO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pelicula1_sinopsis1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="63o-Q2-BYJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="63o-Q2-BYJ" secondAttribute="height" multiplier="1:1" id="DLL-MI-zFU"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsb-fi-eMV">
+                                <rect key="frame" x="0.0" y="414" width="414" height="394"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.  Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kHe-h4-pwl"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="kHe-h4-pwl" firstAttribute="bottom" secondItem="fsb-fi-eMV" secondAttribute="bottom" id="2s7-CL-e5R"/>
+                            <constraint firstItem="fsb-fi-eMV" firstAttribute="top" secondItem="63o-Q2-BYJ" secondAttribute="bottom" id="7uK-el-zcy"/>
+                            <constraint firstItem="63o-Q2-BYJ" firstAttribute="leading" secondItem="kHe-h4-pwl" secondAttribute="leading" id="Cpj-ab-WfF"/>
+                            <constraint firstItem="kHe-h4-pwl" firstAttribute="trailing" secondItem="fsb-fi-eMV" secondAttribute="trailing" id="UFs-6k-NPJ"/>
+                            <constraint firstItem="63o-Q2-BYJ" firstAttribute="top" secondItem="kHe-h4-pwl" secondAttribute="top" id="kT2-LE-dlL"/>
+                            <constraint firstItem="fsb-fi-eMV" firstAttribute="leading" secondItem="kHe-h4-pwl" secondAttribute="leading" id="n1V-dd-67Q"/>
+                            <constraint firstItem="kHe-h4-pwl" firstAttribute="trailing" secondItem="63o-Q2-BYJ" secondAttribute="trailing" id="v7T-4h-ZXr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LE0-Eu-Dym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853" y="129"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="W8X-Ah-4tF">
+            <objects>
+                <viewController id="wfz-hh-KMY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rQS-KM-3ed">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pelicula3_sinopsis1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cqk-DI-q1l">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cqk-DI-q1l" secondAttribute="height" multiplier="1:1" id="6Wk-PG-nd4"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAe-kc-LlM">
+                                <rect key="frame" x="0.0" y="414" width="414" height="394"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.  Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qoN-XS-rlY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="qoN-XS-rlY" firstAttribute="trailing" secondItem="uAe-kc-LlM" secondAttribute="trailing" id="PRD-Nq-Mig"/>
+                            <constraint firstItem="qoN-XS-rlY" firstAttribute="bottom" secondItem="uAe-kc-LlM" secondAttribute="bottom" id="SUl-Xr-cRn"/>
+                            <constraint firstItem="uAe-kc-LlM" firstAttribute="top" secondItem="cqk-DI-q1l" secondAttribute="bottom" id="Szl-RT-O2l"/>
+                            <constraint firstItem="uAe-kc-LlM" firstAttribute="leading" secondItem="qoN-XS-rlY" secondAttribute="leading" id="ZiR-Bn-PUu"/>
+                            <constraint firstItem="cqk-DI-q1l" firstAttribute="leading" secondItem="qoN-XS-rlY" secondAttribute="leading" id="kKh-Jy-53q"/>
+                            <constraint firstItem="cqk-DI-q1l" firstAttribute="top" secondItem="qoN-XS-rlY" secondAttribute="top" id="oji-dL-pTN"/>
+                            <constraint firstItem="qoN-XS-rlY" firstAttribute="trailing" secondItem="cqk-DI-q1l" secondAttribute="trailing" id="vti-pi-yKV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4K9-UE-MKv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2226" y="129"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wsd-Ap-DW1">
+            <objects>
+                <viewController id="gzw-Ai-fJQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KTv-mT-CmM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pelicula4_sinopsis1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gR0-7L-5on">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gR0-7L-5on" secondAttribute="height" multiplier="1:1" id="ObI-qq-WUJ"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aim-wZ-Vin">
+                                <rect key="frame" x="0.0" y="414" width="414" height="394"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.  Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fcP-2o-6xJ"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="Aim-wZ-Vin" firstAttribute="leading" secondItem="fcP-2o-6xJ" secondAttribute="leading" id="As3-Dy-W8z"/>
+                            <constraint firstItem="fcP-2o-6xJ" firstAttribute="trailing" secondItem="gR0-7L-5on" secondAttribute="trailing" id="F80-Vh-Myb"/>
+                            <constraint firstItem="fcP-2o-6xJ" firstAttribute="trailing" secondItem="Aim-wZ-Vin" secondAttribute="trailing" id="JsP-5w-f71"/>
+                            <constraint firstItem="fcP-2o-6xJ" firstAttribute="bottom" secondItem="Aim-wZ-Vin" secondAttribute="bottom" id="Pi7-9X-Jhu"/>
+                            <constraint firstItem="gR0-7L-5on" firstAttribute="top" secondItem="fcP-2o-6xJ" secondAttribute="top" id="gNL-FL-0Jc"/>
+                            <constraint firstItem="Aim-wZ-Vin" firstAttribute="top" secondItem="gR0-7L-5on" secondAttribute="bottom" id="nUx-ss-3yc"/>
+                            <constraint firstItem="gR0-7L-5on" firstAttribute="leading" secondItem="fcP-2o-6xJ" secondAttribute="leading" id="reo-5L-KO7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FEx-KX-kU1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2875" y="129"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="afg-9i-xex">
+            <objects>
+                <viewController id="zpd-na-x5i" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bCN-tG-f1L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pelicula2_sinopsis1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2su-ZJ-A5L">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2su-ZJ-A5L" secondAttribute="height" multiplier="1:1" id="sfc-tU-ahJ"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCv-oz-pTH">
+                                <rect key="frame" x="0.0" y="414" width="414" height="394"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.  Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kfU-FK-2f0"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="kfU-FK-2f0" firstAttribute="trailing" secondItem="2su-ZJ-A5L" secondAttribute="trailing" id="1au-rY-vmX"/>
+                            <constraint firstItem="kfU-FK-2f0" firstAttribute="trailing" secondItem="vCv-oz-pTH" secondAttribute="trailing" id="9R2-Hc-ZHX"/>
+                            <constraint firstItem="2su-ZJ-A5L" firstAttribute="leading" secondItem="kfU-FK-2f0" secondAttribute="leading" id="On2-a6-TKy"/>
+                            <constraint firstItem="2su-ZJ-A5L" firstAttribute="top" secondItem="kfU-FK-2f0" secondAttribute="top" id="SBn-Sf-YiC"/>
+                            <constraint firstItem="kfU-FK-2f0" firstAttribute="bottom" secondItem="vCv-oz-pTH" secondAttribute="bottom" id="gIf-OX-1p1"/>
+                            <constraint firstItem="vCv-oz-pTH" firstAttribute="top" secondItem="2su-ZJ-A5L" secondAttribute="bottom" id="hLl-Z2-Nk0"/>
+                            <constraint firstItem="vCv-oz-pTH" firstAttribute="leading" secondItem="kfU-FK-2f0" secondAttribute="leading" id="iWs-u4-ZXj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Vw-Qf-fbx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1565" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cinépolis.png" width="1280" height="363"/>
+        <image name="barra.jpg" width="639.91998291015625" height="102"/>
+        <image name="pelicula1_cartel1.jpg" width="800" height="800"/>
+        <image name="pelicula1_sinopsis1.jpg" width="800" height="800"/>
+        <image name="pelicula2_cartel1.jpg" width="800" height="800"/>
+        <image name="pelicula2_sinopsis1.jpg" width="800" height="800"/>
+        <image name="pelicula3_cartel1.jpg" width="800" height="800"/>
+        <image name="pelicula3_sinopsis1.jpg" width="800" height="800"/>
+        <image name="pelicula4_cartel1.jpg" width="800" height="800"/>
+        <image name="pelicula4_sinopsis1.jpg" width="800" height="800"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
